@@ -1,0 +1,50 @@
+// mobile nav menu content
+.nav-menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.35s ease 0s, visibility 0.35s ease 0s, height 0.35s ease 0s;
+    overflow: hidden;
+    background: $dark-blue;
+    visibility: hidden;
+
+    &.show {
+        opacity: 0.9;
+        visibility: visible;
+        height: 100%;
+        z-index: 1999;
+    }
+
+    &__links {
+        margin: 40px 0;
+    }
+
+    .nav-link {
+        color: $base-color;
+        text-transform: uppercase;
+        font-size: $font-size-medium;
+        border-bottom: 0.01px solid $grayish-blue;
+        margin: 0 32px;
+        padding: 24px 0;
+        line-height: 17px;
+
+        &:first-of-type {
+            padding-top: 24px;
+            border-top: 0.01px solid $grayish-blue;   
+        }
+
+        &:last-child {
+            border: 2px solid $base-color;
+            border-radius: 5px;
+            margin-top: 24px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .social {
+        margin-top: 120px;
+    }
+}

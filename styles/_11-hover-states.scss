@@ -1,0 +1,82 @@
+// nav menu
+.nav-menu {
+    & .nav-link:hover {
+        color: $soft-red;
+    }
+
+    & .nav-link:last-child:hover {
+        background-color: $base-color;
+        border: 2px solid $soft-red;
+        color: $soft-red;
+    }
+}
+
+// hero section
+.hero-buttons {
+    & .button:hover {
+        background-color: $base-color;
+        border: 2px solid $soft-blue;
+        color: $soft-blue;
+    }
+
+    & .button.light:hover {
+        border-color: $dark-blue;
+        color: $dark-blue;
+    }
+}
+
+// features section
+.features-list {
+    &__item:hover {
+        color: $soft-red;
+    }
+}
+
+// download section
+.download {
+    .card-button:hover {
+        background-color: $base-color;
+        border: 2px solid $soft-blue;
+        color: $soft-blue;
+    }
+}
+
+// FAQ section 
+.faq {
+    &-list {
+        & .btn-link:hover {
+            color: $soft-red;
+        }
+    }
+
+    & .button:hover {
+        background-color: $base-color;
+        border: 2px solid $soft-blue;
+        color: $soft-blue;
+    }
+}
+
+// contact section
+.contact-us {
+    & .button:hover {
+        background-color: $base-color;
+        border: 2px solid $soft-red;
+        color: $soft-red;
+    }
+}
+
+// footer section
+.footer {
+    & .nav-link:hover {
+        color: $soft-red;
+    }
+
+    &-attribution__link:hover {
+        color: $soft-blue;
+    }
+}
+
+
+
+
+

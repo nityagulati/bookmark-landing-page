@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+// colors
+$black: hsl(0, 0, 0);
+$white: hsl(100, 100%, 100%);
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$grayish-blue: hsl(229, 8%, 60%);
+$dark-blue: hsl(229, 31%, 21%);
+$shadow-color: rgba(73, 93, 207, 0.20012);
+$light-button: #f7f7f7;
+$email-color: rgba(36, 42, 69, 0.250109);
+$link-color: hsl(228, 45%, 44%);
+
+$base-color: $white;
+$body-color: $grayish-blue;
+$primary-blue: $soft-blue;
+$primary-red: $soft-red;
+$title-color: $dark-blue;
+
+// typography 
+$font-stack: 'Rubik', sans-serif;
+
+$font-size-base: 18px;
+$font-size-xxsmall: 12px;
+$font-size-xsmall: 14px;
+$font-size-small: 15px;
+$font-size-regular: 16px;
+$font-size-medium: 20px;
+$font-size-large: 24px;
+$font-size-xlarge: 30px;
+
+$font-weight-regular: 400;
+$font-weight-bold: 500;
+

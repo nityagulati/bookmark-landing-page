@@ -1,0 +1,63 @@
+// features list
+.features {
+    &-list {
+        margin-left: 50px;
+        margin-right: 50px;
+
+        &__item {
+            font-size: $font-size-regular;
+            color: $dark-blue;
+        }
+    }
+
+    &-content__img {
+        position: relative;
+        margin-bottom: 50px;
+    
+        &.tab-1 {
+            &::before {
+                @extend .img-bg;
+                left: -420px;
+                top: 40px;
+            }
+        }
+    
+        &.tab-2, &.tab-3 {
+            &::before {
+                @extend .img-bg;
+                left: -420px;
+                top: 60px;
+            }
+        }
+    }
+}
+
+// bootstrap list group
+.list-group {
+    &-flush {
+        & .list-group-item {        
+            &:first-child {
+                border-top-width: 1px;
+            }
+        
+            &:last-child {
+                border-bottom-width: 1px;
+            }
+        }
+    }
+
+    &-item.active {
+        background-color: $base-color;
+        color: $dark-blue;
+        border-color: rgba($black, 0.125);
+
+        &::after {
+            content: '';
+            border-bottom: 5px solid $primary-red;
+            width: 40%;
+            position: absolute;
+            bottom: -5%;
+            right: 30%;
+        }
+    }
+}

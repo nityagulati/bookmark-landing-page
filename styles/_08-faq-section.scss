@@ -1,0 +1,62 @@
+// FAQ section
+.faq {
+    &-title {
+        line-height: 30px;
+        margin-bottom: 16px;
+    }
+
+    &-text {
+        margin-bottom: 64px;
+    }
+
+    &-list {
+        text-align: left;
+
+        & .card {
+            border-right: 0;
+            border-left: 0;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            &-header {
+                background-color: $base-color;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            &-body {
+                padding-left: 0;
+                font-size: $font-size-small;
+                line-height: 30px;
+            }
+
+            & .btn {
+                padding-left: 0;
+                font-size: $font-size-small;
+                line-height: 32px;
+                text-align: left;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &::after {
+                    content: url(./images/icon-arrow.svg);
+                    align-self: center;
+                }  
+
+                &[aria-expanded="true"].btn::after {
+                        content: url(./images/icon-arrow-red.svg);
+                        transform: rotate(180deg);
+                    }
+            }   
+            
+            & .btn-link {
+                color: $dark-blue;
+                text-decoration: none;
+            }
+        }
+    }
+}

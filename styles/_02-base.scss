@@ -1,0 +1,115 @@
+// mobile first development - scaled up
+// extra small devices (portrait phones, min-width: 280px and up)
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    background-color: $base-color;
+    color: $body-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: $font-size-xlarge;
+    font-weight: $font-weight-bold;
+    color: $title-color;
+    line-height: 40px;
+}
+
+h2 {
+    color: $title-color;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+    line-height: 52px;
+}
+
+p {
+    font-size: $font-size-small;
+    line-height: 25px;
+}
+
+img {
+    width: 100%;
+}
+
+// image background settings
+.img-bg {
+    content: '';
+    position: absolute;
+    background-color: $soft-blue;
+    width: 577px;
+    height: 150px;
+    border-radius: 316.5px;
+    z-index: -2;
+}
+
+// hero image background
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    &-img {
+        position: relative;
+
+        &::before {
+            @extend .img-bg;
+            left: 75px;
+            top: 60px;
+        }
+    }
+}
+
+// media query breakpoints
+@mixin for-size($device) {
+    // Small devices (portrait phones, 320px and up)
+    @if $device == iphone-5-up {
+        @media (min-width: 320px) { @content; }
+    }
+    // Small devices (portrait phones, 360px and up)
+    @if $device == small-phone-up {
+        @media (min-width: 360px) { @content; }  
+    }
+    // Small devices (portrait phones, 411px and up)
+    @if $device == pixel-phone-up {
+        @media (min-width: 411px) { @content; }  
+    }
+    // Small devices (landscape phones, 576px and up)
+    @if $device == landscape-phone-up {
+        @media (min-width: 576px) { @content; }
+    }
+    // Medium devices (tablets, 768px and up)
+    @if $device == ipad-tablet-up {
+        @media (min-width: 768px) { @content; }
+    }
+    // Large devices (desktops, 992px and up)
+    @if $device == large-devices-up {
+        @media (min-width: 992px) { @content; }
+    }
+    // Ipad Pro (large tablets, 1024px and up
+    @if $device == ipad-pro-up {
+        @media (min-width: 1024px) { @content;  }
+    }
+    // Extra large devices (large desktops, 1200px and up)
+    @if $device == desktop-up {
+        @media (min-width: 1200px) { @content; }   
+    }   
+}
+
+
+
+
+
+
+
+
+
+

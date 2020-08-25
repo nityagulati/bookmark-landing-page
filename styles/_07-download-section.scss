@@ -1,0 +1,33 @@
+// download cards
+.download {
+    &-card {
+        box-shadow: 0px 10px 20px -5px $shadow-color;
+        border-radius: 15px;
+        border: 0;
+        margin-bottom: 50px;
+    }
+
+    .card-img-top {
+        width: 30%;
+        margin-top: 49px;
+        margin-bottom: 32px;
+    }
+
+    .card-title {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-bold;
+        line-height: 24px;
+        color: $dark-blue;
+        margin-bottom: 6px;
+    }
+
+    .card-text {
+        line-height: 28px;
+        margin-bottom: 32px;
+    }
+
+    .card-button {
+        margin: 24px;
+    }
+}
+

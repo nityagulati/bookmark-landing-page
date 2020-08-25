@@ -1,0 +1,33 @@
+// footer section
+.footer {
+    background-color: $dark-blue;
+    color: $base-color;
+    text-transform: uppercase;
+
+    &-logo-img {
+        width: 50%;
+    }
+
+    & .nav {
+        &-link {
+            color: $base-color;
+            font-size: $font-size-small;
+            line-height: 17px;
+            letter-spacing: 1.73px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &-attribution {
+        &__text {
+            text-transform: capitalize;
+            font-size: $font-size-xxsmall;
+            color: $grayish-blue;
+            text-align: center;
+        }
+
+        &__link {
+            color: $base-color;
+        }
+    }
+}

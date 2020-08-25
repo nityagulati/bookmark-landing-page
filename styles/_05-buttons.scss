@@ -1,0 +1,24 @@
+// buttons
+.button {
+    background-color: $soft-blue;
+    color: $base-color;
+    box-shadow: 0 8px 8px -4px $shadow-color;
+    font-size: $font-size-xsmall;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.25px;
+
+    &.light {
+        background-color: $light-button;
+        color: $dark-blue;
+    }
+
+    &.contact {
+        background-color: $primary-red;
+        width: 100%;
+    }
+}
+
+// nav menu close button
+.close {
+    opacity: 1;
+}
